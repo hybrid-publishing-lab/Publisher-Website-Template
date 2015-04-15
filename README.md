@@ -9,7 +9,7 @@
 ##Creating a Book
 
 
-###Thumbnails
+**Thumbnails**
 
 Each book is accompanied by a cover thumbnail and a banner. The images to be used should have the following size:
 
