@@ -1,0 +1,93 @@
+.searchContainer {
+	.page-header {
+		border-top: none;
+		border-bottom:none;
+		font-family:osBold;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.results-header {
+		margin-top: 40px;
+		font-family:osBold;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	@media (max-width: @phoneMax) {
+
+		.page-header {
+			margin-top:40px;
+		}
+	}
+	.search-info {
+		font-family: osItalic;
+		color: @input-color-placeholder;
+	}
+
+	.searchInput {
+		margin-top:40px;
+		input#s {
+			width:100%;
+			height:70px;
+			line-height:70px;
+			font-size:46px;
+			color:black;
+			border:none;
+		}
+	}
+
+	section {
+		.sectionTitle {
+			font-family: osItalic;
+			color: @input-color-placeholder;
+			margin-top:40px;
+		}
+		.resultsContent {
+			margin-top:20px;
+			.item {
+				.title {
+					font-family: osBold;
+					font-size:14px;
+					a {
+						text-decoration: underline;
+						color:black;
+					}
+				}
+				.body {
+					font-family: osRegular;
+					font-size:14px;
+					text-decoration: none;
+					color: @input-color-placeholder;
+					.searchTerm {
+						font-family: osBold;
+						
+					}
+				}
+			}
+			.row {
+				.item {
+					a {
+						img {
+							width:100%;
+							height:auto;
+						}
+					}
+				}
+			}
+		}
+		&#inAuthors {
+			.resultsContent {
+				.item {
+					margin-bottom:10px;
+				}
+			}
+		}
+		&#inBlog {
+			.resultsContent {
+				.item {
+					margin-bottom:20px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.featured_series {
+	display:block;
+	position:relative;
+	clear:left;
+}
+
+.social-buttons{
+	position:absolute;
+	right:0px;
+	top:2px;
+	width:250px;
+	height:50px;
+	.fb-button {
+		position:relative;
+		float:left;
+		width:125px;
+		height:100%;
+		background-color:@fb-blue;
+		color:white;
+		overflow:hidden;
+		@media (max-width: @phoneMax) {
+			right: 0px;
+			width:50px;
+			img {
+				position:absolute;
+				left:-6px;
+				top:2px;
+				width:125px;
+				max-width: 125px !important;
+			}
+		}
+	}
+	.twitter-button {
+		position:relative;
+		float:left;
+		width:125px;
+		height:100%;
+		background-color:@twitter-blue;
+		color:white;
+		overflow:hidden;
+		@media (max-width: @phoneMax) {
+			right: 0px;
+			width:50px;
+			img {
+				position:absolute;
+				left:-6px;
+				top:2px;
+				width:125px;
+				max-width: 125px !important;
+			}
+		}
+	}
+	@media (max-width: @phoneMax) {
+		width: 100px;
+	}
+	@media (max-width: @grid-float-breakpoint) {
+		right: -10px;
+	}
+
+}

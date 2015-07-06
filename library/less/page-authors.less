@@ -1,0 +1,141 @@
+.sortbyletters {
+	position: relative;
+	float: left;
+	min-height: 1px;
+	padding-top: 0px;
+	background-color:#eaecee;
+	height:30px;
+	width: 30px;
+	margin: 0 10px 10px 0;
+	text-align: center;
+
+	h3 {
+		line-height:30px;
+		color: #d0d0d0;
+		&.active {
+			background-color: black;
+			color: #fff;
+		}
+	}
+
+	&.has-entries{
+		background-color:#eaecee;
+
+		h3 {
+			cursor: pointer;
+			color:black;
+			&.active {
+				background-color: black;
+				color: #fff;
+			}
+		}
+	}
+	
+}
+
+.show-all-filter {
+	position:relative;
+	display:block;
+	float:left;
+	font-family: osRegular;
+	font-weight:normal;
+	font-size:12px;
+	text-decoration:none;
+	background-color:#eaecee;
+	color: #dedede;
+	color:black;
+	cursor: pointer;
+	line-height:16px;
+	height:30px;
+	width:46px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:2px;
+	&.active {
+		color: white;
+		background-color:black;
+		cursor: default;
+	}
+}
+.show-all {
+	h3.show-all-filter {
+		margin-top:0px;
+		margin-bottom:0px;
+		padding-top:6px;
+		padding-bottom:0px;
+		padding-left:10px;
+		padding-right:10px;
+		font-family: osBold;
+		font-weight:normal;
+		font-size:14px;
+		text-transform:uppercase;
+	}
+}
+#booktags {
+	.show-all-filter {
+		margin-left: 10px;
+	}
+}
+.page-template-page-authors .bg_image {
+	margin-right: 20px;
+	float:left;
+	width:140px;
+}
+.person-box {
+	min-height:105px;
+	height:auto;
+	overflow:hidden;
+
+	.author_image_sm {
+		position: relative;
+		float:left;
+		width: 140px;
+	}
+	.author_info {
+		position: relative;
+		float:left;
+		width: calc(~'100% - 170px');
+		overflow:hidden;
+		height:110px;
+		ul {
+			padding:0px;
+			margin:0px;
+			list-style-type: none;
+			li.personTag, a.personTag{
+				display:block;
+				margin:0px;
+				font-size: 9px;
+				text-transform: uppercase;
+				line-height: 14px;
+				height:14px;
+				
+				letter-spacing: 0.075em;
+				color: #8c99a2;
+				cursor: pointer;
+				
+				span {
+					border-bottom: 1px solid #8c99a2;
+				}
+
+				&:hover {
+					span {
+						text-decoration: none;
+						border-bottom: none;
+					}
+				}
+
+
+			}
+		}
+		
+	}
+	
+}
+
+.quote_author {
+	font-size: 13px;
+	font-style: italic;
+	padding-left: 24px;
+	background-position: 0 3px;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,32 @@
+#acf-banner_keywords {
+	width: 49% !important;
+	float: left !important;
+}	
+#acf-excerpt {
+	width: 49% !important;
+	float: right !important;
+}
+#acf-author, #acf-black_white_box, #acf-banner_textcolor {
+	clear: both;
+}
+
+#acf-shop_label_1, #acf-shop_label_2, #acf-shop_label_3 {
+
+	width: 49%;
+}
+
+#acf-shop_link_1, #acf-shop_link_2, #acf-shop_link_3  {	
+	float:right;
+	width: 49%;
+}
+
+#acf-social_label_1, #acf-social_label_2, #acf-social_label_3 {
+
+	width: 49%;
+}
+
+#acf-social_link_1, #acf-social_link_2, #acf-social_link_3  {	
+	float:right;
+	width: 49%;
+}
+

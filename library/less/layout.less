@@ -1,0 +1,145 @@
+/*
+
+WP-Bootstrap - Layout
+
+*/
+
+/* layout */
+html {
+	height:100%;
+}
+
+body{
+	height: 100%;
+	// This is to account for the fixed navbar
+	padding-top:50px;
+
+	.main-container {
+		min-height: calc(~'100% - 80px');
+	}
+	
+	@media (max-width: @phoneMax) {
+		.row.phoneFull {
+			margin-left:-20px;
+			margin-right:-20px;
+			.col-sm-12 {
+				
+				padding-left:0px;
+				padding-right:0px;
+				img{
+					width:100%;
+				}
+			}
+		}
+		.phoneMedium {
+			margin-left:-10px;
+			margin-right:-10px;
+		}
+	}
+	@media (min-width: @tabletMin) {
+		padding-top: 80px;
+		.row.tabletNotFull {
+			img {
+				width:auto !important;
+			}
+			
+		}
+
+	}
+
+	@media (min-width: @grid-float-breakpoint) {
+		padding-top: 120px;
+		.phoneMedium {
+		.left-offset{
+				margin-left:-170px;
+			}
+		}
+	}
+
+	line-height: @line-height-base;
+	font-size: @font-size-base;
+
+	a {
+		outline: 0 none;
+	}
+}
+
+/* Admin Top Navigation fix */
+body.admin-bar .navbar-fixed-top{ 
+	top: 28px; 
+}
+
+.navbar .brand{
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+	font-weight: bold !important;
+}
+
+.nav-container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#inner-header{
+	width: 100%;
+}
+
+input, textarea, select, .uneditable-input {
+	margin-bottom: 0;
+}
+
+.navbar-search{
+	padding-left: 0;
+}
+
+	#content{
+		padding: 0 0 0 0;
+	}
+
+#main {
+	margin-bottom: 80px;
+}
+
+.more-link{
+	white-space: nowrap;
+}
+
+@media (min-width: @tabletMax) {
+	.container620 {
+			max-width: 620px;
+	}
+	#content{
+		padding: 10px 0 0;
+	}
+}
+
+/*
+ *  Footer Navigation
+ */
+
+ .page-nav-container {
+ 	position:relative;
+ 	clear:left;
+ 	height:60px;
+ 	width:100%;
+
+ 	.previous-page {
+		display:block;
+		width:50%;
+		heigt:40px;
+		position: absolute;
+		left: 0px;
+		text-align:left;
+	}
+	
+	.next-page {
+		display:block;
+		width:50%;
+		heigt:40px;
+		position: absolute;
+		right: 0px;
+		top:0px;
+		text-align:right;
+	}
+ }
+

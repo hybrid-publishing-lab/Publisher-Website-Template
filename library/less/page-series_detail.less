@@ -1,0 +1,53 @@
+.page-header-series {
+	.small_titles {
+		margin-top: 14px;
+		a {
+			color: #000;
+			margin-left: 20px;
+		}
+	}
+
+	&.page-header {
+		margin: 0;
+		border-bottom: 0;
+		border-top: 0;
+		
+
+		.nomargin {
+			margin-left: 0px;
+			margin-right: 0px;
+			border-bottom: 2px solid @meson-gray;
+			border-top: 2px solid @meson-gray;
+			padding-left:0px;
+			padding-right:0px;
+		}
+		@media (max-width: @desktopMax) {
+			.nomargin {
+				margin-left: 10px;
+			}
+		}
+		@media (max-width: @tabletMax) {
+			.nomargin {
+				margin-left: -10px;
+				margin-right: -10px;
+			}
+		}
+		@media (max-width: @phoneMax) {
+			.nomargin {
+				margin-left: -20px;
+				margin-right: -20px;
+			}
+		}
+	}
+}
+
+
+.button_back {
+	background-color: #eaedee;
+	width: 50px;
+	height: 50px;
+	float: left;
+	padding-top: 19px;
+	text-align: center;
+	font-weight: bold;
+}

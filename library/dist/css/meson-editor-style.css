@@ -1,0 +1,59 @@
+@import url( '../../../style.css' );
+
+/* Add overwrites as needed so that the content of the editor field is attractive and not broken */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body { 
+	padding: 0; 
+	background: #fff; 
+	font-family: 'Open Sans', sans-serif;
+} 
+
+.banner_text_right {
+	float: right;
+}
+
+.banner_text_left {
+	float: left;
+}
+
+.banner_text_center {
+	float: none;
+	display: table;
+	margin: auto;
+}
+
+p {
+	clear: 		both;
+}
+
+div {
+	clear: 		both;
+}
+
+.banner_text_underline_white {
+	border-bottom: 3px solid #ffffff;
+}
+
+.banner_text_underline_black {
+	border-bottom: 3px solid #000000;
+}
+
+.banner_text_background_black {
+	background-color: #000000;
+}
+
+.banner_text_background_white {
+	background-color: #ffffff;
+}
+
+a.more_info {
+	text-decoration: none;
+  	padding: 0 0 1px;
+  	color: #000;
+  	letter-spacing: 0.1em;
+  	text-transform: uppercase;
+  	font-size: 13px;
+  	font-weight: 700;
+}

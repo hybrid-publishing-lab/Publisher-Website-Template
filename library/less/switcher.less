@@ -1,0 +1,138 @@
+.grid, .list{
+	float: left; 
+	cursor:  pointer; 
+	margin-left: 15px;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.grid {
+	margin-top: 1px;
+}
+
+.grid-active, 
+.list-active, 
+.grid:hover,
+.list:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.view-cnt {
+	float: right;
+}
+
+/* Category menu Style */
+.category-menu ul { 
+	padding-left: 15px;
+}
+.category-menu ul li {  
+	list-style: none; 
+	cursor: pointer;
+	float: left; 
+	margin-right: 10px;
+	background-color: #039fd3; 
+	color: #fff; 
+	padding: 5px 10px;
+	font-size: 13px;
+	border-radius: 3px;
+	-webkit-transition:background-color 0.3s ease-in;  
+   	-moz-transition:background-color 0.3s ease-in;  
+   	-o-transition:background-color 0.3s ease-in;  
+   	transition:background-color 0.3s ease-in;
+}
+
+
+/* Grid Style */
+.prod-box {
+	width: 16.66666667%;
+	padding: 0px 10px;
+	margin-bottom: 15px;
+	float: left;
+	@media (max-width: @screen-md-min) {
+		width: 25%;
+	}
+	@media (max-width: @screen-sm-min) {
+		width: 50%;
+	}
+	ul {
+		margin: 0;
+		list-style-type: none;
+		padding-start: 0;
+		-moz-padding-start: 0;
+		-webkit-padding-start: 0;
+		li {
+			&.bookslist_title {
+				display:none;
+			}
+			&.bookslist_author {
+				display:none;
+			}
+			&.bookslist_excerpt {
+				display:none;
+			}
+			&.bookslist_year {
+				display:none;
+			}
+			img {
+				width: 140px;
+				height: 200px;
+			}
+		}
+	}
+}
+
+.prod-box p { display: none;}
+
+
+/* List View Style */
+
+.prod-box-list {
+	display: table;
+	border-collapse: collapse;
+	width: 100%;
+	position: relative;
+	ul {
+		list-style-type: none;
+		padding-start: 0;
+		-moz-padding-start: 0;
+		-webkit-padding-start: 0;
+		border-top: 2px solid #edf2f5;
+		margin: 0 10px;
+		li {
+			display: table-cell;
+			float: left;
+			padding: 10px 10px 10px 0;
+			&.bookslist_cover {
+				width: 12%;
+			}
+			&.bookslist_title {
+				width: 26%;
+			}
+			&.bookslist_author {
+				width: 17%;
+			}
+			&.bookslist_excerpt {
+				width: 38%;
+			}
+			&.bookslist_year {
+				width: 7%;
+				float:right;
+				text-align:right;
+				padding-right:0;
+			}
+			img {
+				height: 100px !important;
+				width: 70px !important;
+			}
+		}
+	}
+}
+
+.prod-box-list .old{	
+	color: #be0000 !important; 
+	float: right;	
+	font-style: 18px;
+	text-decoration: line-through;
+}
+

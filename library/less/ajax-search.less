@@ -1,0 +1,34 @@
+#search-suggest-container{
+	position:absolute;
+	background-color:white;
+	clear:left;
+	width:100%;
+	height:auto;
+	z-index:1000;
+	display:block;
+	overflow:hidden;
+	max-width:620px;
+	.search-suggestion-list {
+		padding:0px;
+		
+		list-style-type: none;
+		li {
+			font-family: osRegular;
+			font-size:46px;
+			line-height:70px;
+			color: @meson-gray-dark;
+			cursor:pointer;
+			.s {
+				color:black
+			}
+			&:hover, &.selected {
+				background-color: @meson-gray;
+			}
+		}
+	}
+
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
