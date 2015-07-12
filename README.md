@@ -1,7 +1,6 @@
 
-
-
-
+#Installation
+Information on how to install the template in Wordpress can be found in the intallation.txt file.
 
 
 #How to use
@@ -15,4 +14,4 @@ Each book is accompanied by a cover thumbnail and a banner. The images to be use
 
 Cover image: 648px height
 
-Banner Thumbnail: 128x490 px
+Banner Thumbnail: 1280x490 px
