@@ -1,6 +1,6 @@
 
 #Installation
-Information on how to install the template in Wordpress can be found in the intallation.txt file.
+Information on how to install the template in Wordpress can be found in the intall.md file.
 
 
 #How to use
